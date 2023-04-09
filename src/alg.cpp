@@ -34,7 +34,6 @@ int getPrior(char op) {
   }
   return prior;
 }
-
 std::string spc(const std::string& s) {
   if (s.length() <= 2) {
     return s;
@@ -46,7 +45,6 @@ std::string spc(const std::string& s) {
   }
   return r;
 }
-
 std::string infx2pstfx(std::string inf) {
   std::string work;
   TStack<char, 100> stack1;
@@ -83,8 +81,6 @@ std::string infx2pstfx(std::string inf) {
   work = spc(work);
   return work;
 }
-
-
 int count(const int& a, const int& b, const int& oper) {
   switch (oper) {
     default:
