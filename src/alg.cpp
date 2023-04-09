@@ -36,7 +36,9 @@ int getPrior(char op) {
 }
 
 std::string spc(const std::string& s) {
-  if (s.length() <= 2) return s;
+  if (s.length() <= 2) {
+    return s;
+  }
   int n = 2 - s.length() % 2;
   std::string r(s, 0, n);
   for (auto it = s.begin() + n; it != s.end();) {
@@ -84,6 +86,7 @@ std::string infx2pstfx(std::string inf) {
   work = spc(work);
   return work;
 }
+
 
 int count(const int& a, const int& b, const int& oper) {
   switch (oper) {
